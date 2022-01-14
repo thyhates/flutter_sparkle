@@ -19,3 +19,7 @@ doc/api/
 *.js_
 *.js.deps
 *.js.map
+/flutter_sparle.iml
+.idea/
+flutter_sparkle.iml
+Pods/
