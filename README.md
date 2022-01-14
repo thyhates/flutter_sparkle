@@ -1,7 +1,7 @@
 # flutter_sparkle
 A flutter plugin to check update and install your macOS app which use [Sparkle](https://sparkle-project.org/).
 
-Just support for macOS platform.
+Only support for macOS platform.
 # Setup
 
 - Enable network connections for your app
