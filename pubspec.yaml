@@ -1,5 +1,5 @@
 name: flutter_sparkle
-description: A flutter plugin implements sparkle
+description: A flutter plugin to check update and install your via Sparkle
 version: 0.0.1
 homepage: https://github.com/thyhates/flutter_sparkle
 
@@ -27,6 +27,8 @@ flutter:
   # adding or updating assets for this project.
   plugin:
     platforms:
+      macos:
+        pluginClass: FlutterSparklePlugin
       macos:
         pluginClass: FlutterSparklePlugin
 
