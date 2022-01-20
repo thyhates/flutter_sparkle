@@ -1,5 +1,5 @@
 #include "include/flutter_sparkle/flutter_sparkle_plugin.h"
-
+#include "include/winSparkle/winsparkle.h"
 // This must be included before many other Windows headers.
 #include <windows.h>
 
@@ -9,7 +9,6 @@
 #include <flutter/method_channel.h>
 #include <flutter/plugin_registrar_windows.h>
 #include <flutter/standard_method_codec.h>
-
 #include <map>
 #include <memory>
 #include <sstream>

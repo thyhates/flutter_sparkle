@@ -29,7 +29,7 @@ flutter:
     platforms:
       macos:
         pluginClass: FlutterSparklePlugin
-      macos:
+      windows:
         pluginClass: FlutterSparklePlugin
 
   # To add assets to your plugin package, add an assets section, like this:
