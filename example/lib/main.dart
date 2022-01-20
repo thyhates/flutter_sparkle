@@ -4,7 +4,9 @@ import 'dart:async';
 import 'package:flutter/services.dart';
 import 'package:flutter_sparkle/flutter_sparkle.dart';
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  var result =await FlutterSparkle.initWinUpdate('https://test.asthestarsfall.cn/get/win/version');
   runApp(const MyApp());
 }
 
@@ -26,6 +28,7 @@ class _MyAppState extends State<MyApp> {
 
   // Platform messages are asynchronous, so we initialize in an async method.
   Future<void> initPlatformState() async {
+
     String platformVersion;
     // Platform messages may fail, so we use a try/catch PlatformException.
     // We also handle the message potentially returning null.
@@ -51,11 +54,11 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Plugin example app'),
+          title: const Text('Plugin example appp'),
         ),
         body: Center(
-          child: ElevatedButton(onPressed: (){
-            FlutterSparkle.checkMacUpdate('https://test.asfarastheeyecansee.cn/get/mac/version');
+          child: ElevatedButton(onPressed: () async {
+            FlutterSparkle.checkWinUpdate();
           }, child: const Icon(Icons.update),),
         ),
       ),
