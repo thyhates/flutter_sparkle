@@ -1,5 +1,6 @@
 # flutter_sparkle
-A flutter plugin to check update and install your macOS app which use [Sparkle](https://sparkle-project.org/).
+A flutter plugin to check update and install your macOS app which use [Sparkle](https://sparkle-project.org/)
+while Windows platform use [WinSparkle](https://winsparkle.org/).
 
 Only support for macOS and Windows platform.
 # Setup
@@ -15,11 +16,11 @@ Import flutter_sparkle plugin
 import 'package:flutter_sparkle/flutter_sparkle.dart';
 ```
 ## mac
-Pass your appcast.xml url to  `checkMacUpdate` method. 
+`checkMacUpdate` 
 ```dart
  FlutterSparkle.checkMacUpdate('https://test.asfarastheeyecansee.cn/get/mac/version');
 ```
-All done.
+
 ## windows
 initial winSparkle at `main` with your appcast.xml feed url.
 ```dart
@@ -32,7 +33,4 @@ FlutterSparkle.checkWinUpdate();
 `checkWinUpdateAndInstall` check and install 
 
 
-`checkWinUpdateWithoutUI` check without Ui but still install when new version coming. 
-# change log
-## 0.0.2
-add support for windows platform
+`checkWinUpdateWithoutUI` check without UI but still install when new version coming. 
